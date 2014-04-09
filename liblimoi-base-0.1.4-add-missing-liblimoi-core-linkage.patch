@@ -1,0 +1,21 @@
+--- liblimoi-base-0.1.4/src/Makefile.am~	2014-04-10 00:43:03.000000000 +0200
++++ liblimoi-base-0.1.4/src/Makefile.am	2014-04-10 00:50:58.028437788 +0200
+@@ -35,7 +35,7 @@ liblimoi_base_la_CFLAGS = -Wall -Werror
+ 	-Ivideo \
+ 	-Iother
+ 
+-liblimoi_base_la_LIBADD = $(LIMUTIL_LIBS)
++liblimoi_base_la_LIBADD = $(LIMUTIL_LIBS) $(LIMOI_LIBS)
+ 
+ liblimoi_base_la_LDFLAGS = -version-info @LIMOI_BASE_SO_VERSION@ \
+ 	 --no-allow-shlib-undefined
+--- liblimoi-base-0.1.4/liblimoi-base.pc.in~	2014-04-09 21:02:48.000000000 +0200
++++ liblimoi-base-0.1.4/liblimoi-base.pc.in	2014-04-10 01:30:04.636880773 +0200
+@@ -8,6 +8,6 @@ pluginsdir=@plugindir@
+ Name: liblimoa
+ Description: LIM OpenMAX Integration Layer base library
+ Version: @VERSION@
+-Libs: -L${libdir} -lpthread -llimutil -llimoi-base
++Libs: -L${libdir} -lpthread -llimutil -llimoi-core -llimoi-base
+ Cflags: -I${includedir} -I${includedir}/limutil -I${includedir}/limoi
+ 
