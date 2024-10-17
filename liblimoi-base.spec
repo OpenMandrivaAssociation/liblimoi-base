@@ -9,7 +9,7 @@ Version:	0.1.4
 Release:	1
 Group:		System/Libraries
 License:	LGPLv2.1+
-Url:		http://limoa.sourceforge.net/
+Url:		https://limoa.sourceforge.net/
 Source0:	%{name}-%{version}.tar.xz
 Patch0:		liblimoi-base-0.1.4-add-missing-liblimoi-core-linkage.patch
 
