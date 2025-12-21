@@ -13,6 +13,11 @@ Url:		https://limoa.sourceforge.net/
 Source0:	%{name}-%{version}.tar.xz
 Patch0:		liblimoi-base-0.1.4-add-missing-liblimoi-core-linkage.patch
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 %description
 LIM OpenMAX Integration Layer base library.
 
